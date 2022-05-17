@@ -112,10 +112,10 @@ p {
 /* content area start  */
 
 .content{
-    background: var(--dark-grey);
+    background: var(--dark);
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 .title-bar{
     margin-top: 20px;
@@ -126,6 +126,7 @@ p {
 .title-bar h1{
     font-size: 2rem;
     letter-spacing: 1px;
+    color: var(--pure);
 }
 .content-area {
     margin-top: 10px;
