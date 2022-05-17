@@ -114,6 +114,7 @@ p {
 .content{
     background: var(--dark-grey);
     padding-top: 20px;
+    padding-bottom: 20px;
     margin-top: 20px;
 }
 .title-bar{
@@ -140,9 +141,10 @@ p {
     display: flex;
     justify-content: start;
     align-items: center;
-    background: var(--dark-grey);
+    background: var(--pure);
     padding: 10px;
     border-radius: 10px;
+    margin-top: 10px;
 }
 .content-area .post-card .left img {
   width: 50px;
@@ -170,6 +172,25 @@ p {
     font-size: 1rem;
     color: var(--dark);
     letter-spacing: 1px;
+}
+
+
+/* footer start  */
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.footer p{
+    padding-top: 10px;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+}
+.footer .footer-icons{
+    border: none;
+    margin: 0;
 }
 
 /* responsive  */
@@ -253,7 +274,12 @@ p {
   .content-area .post-card .left img {
   width: 100px;
   height: 100px;
-}
+    }
+    .footer p{
+        margin-top: 20px;
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
 }
 @media (max-width: 360px) {
   .navbar .brand {
