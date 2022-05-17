@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Patrick Hand', cursive; */
+  /* /* font-family: 'Roboto', sans-serif; */
+  font-family: "Zen Loop", cursive;
+}
+:root {
+  --primary: tomato;
+  --dark: #000000;
+  --pure: #fff;
+  --dark-grey: #c2c2c2;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.container {
+  width: 1152px;
+  max-width: 90%;
+  margin: 0 auto;
+  height: 100%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.navbar .brand {
+  font-size: 56px;
+  letter-spacing: 1px;
+}
+
+.navbar .menu .nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.navbar .menu .nav-list li {
+  margin-right: 50px;
+  font-size: 24px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .menu .nav-list li a:hover {
+  color: var(--primary);
+  transition: all 0.3s ease-in-out;
+  font-size: 25px;
+  font-weight: bold;
+}
+/* navbar end  */
+
+/* main start  */
+.hero {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.hero .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero .left .ankit {
+  color: var(--primary);
+}
+.hero .left h1,
+p {
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+.hero .left p {
+  margin-top: 10px;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+.social-icons {
+  margin-top: 20px;
+  border: 1px solid var(--primary);
+  padding: 10px;
+  border-radius: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.social-icons a {
+  color: var(--dark);
+}
+.social-icons a i {
+  margin: 0 20px;
+}
+
+.hero .right img {
+  height: 400px;
+  width: 320px;
+  border-radius: 50px;
+}
+/* hero section end  */
+
+/* content area start  */
+
+
+.title-bar{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-area {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.content-area .post-card {
+    margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--dark-grey);
+  padding: 10px;
+}
+.content-area .post-card .left img {
+  width: 50px;
+  height: 50px;
+}
+
+.content-area .post-card .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* responsive  */
+@media (max-width: 700px) {
+  .navbar .brand {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .navbar .menu .nav-list li {
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  .navbar .menu .nav-list li a {
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar .menu .nav-list li a:hover {
+    color: var(--primary);
+    transition: all 0.3s ease-in-out;
+    font-size: 21px;
+    font-weight: bold;
+  }
+  .hero .left h1,
+  p {
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.4;
+  }
+  .hero .right img {
+    height: 300px;
+    width: 220px;
+    border-radius: 50px;
+  }
+  .social-icons a i {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 460px) {
+  .navbar .brand {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .navbar .menu .nav-list li {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  .navbar .menu .nav-list li a {
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar .menu .nav-list li a:hover {
+    color: var(--primary);
+    transition: all 0.3s ease-in-out;
+    font-size: 19px;
+    font-weight: bold;
+  }
+
+  /* hero section  */
+  .hero {
+    margin-top: 30px;
+    display: block;
+  }
+
+  .hero .left {
+    display: block;
+  }
+  .hero .left h1 {
+    text-align: center;
+  }
+
+  .hero .right img {
+    margin-top: 20px;
+    height: 450px;
+    width: 100%;
+    border-radius: 50px;
+  }
+
+  /* content  */
+  section .title-bar h2{
+    text-align: center;
+  }
+}
+@media (max-width: 360px) {
+  .navbar .brand {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar .menu .nav-list li {
+    margin-right: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  .navbar .menu .nav-list li a {
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar .menu .nav-list li a:hover {
+    color: var(--primary);
+    transition: all 0.3s ease-in-out;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .hero .right img {
+    margin-top: 20px;
+    height: 350px;
+    width: 100%;
+    border-radius: 50px;
+  }
+}
