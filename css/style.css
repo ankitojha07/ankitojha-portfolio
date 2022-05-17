@@ -111,12 +111,20 @@ p {
 
 /* content area start  */
 
-
+.content{
+    background: var(--dark-grey);
+    padding-top: 20px;
+    margin-top: 20px;
+}
 .title-bar{
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.title-bar h1{
+    font-size: 2rem;
+    letter-spacing: 1px;
 }
 .content-area {
     margin-top: 10px;
@@ -127,23 +135,41 @@ p {
   }
 
 .content-area .post-card {
+    width: 100%;
     margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--dark-grey);
-  padding: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background: var(--dark-grey);
+    padding: 10px;
+    border-radius: 10px;
 }
 .content-area .post-card .left img {
   width: 50px;
   height: 50px;
+  border-radius: 10px;
 }
 
 .content-area .post-card .right {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+.content-area .post-card .right h3,.content-area .post-card .right p{
+    text-align: start;
+    letter-spacing: 1px;
+}
+.content-area .post-card .right .btn{
+    margin-top: 5px;
+    border: 1px solid var(--dark);
+    border-radius: 10px;
+    padding: 2px 8px;
+    background: transparent;
+    font-size: 1rem;
+    color: var(--dark);
+    letter-spacing: 1px;
 }
 
 /* responsive  */
@@ -224,6 +250,10 @@ p {
   section .title-bar h2{
     text-align: center;
   }
+  .content-area .post-card .left img {
+  width: 100px;
+  height: 100px;
+}
 }
 @media (max-width: 360px) {
   .navbar .brand {
