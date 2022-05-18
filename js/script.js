@@ -17,7 +17,7 @@ darkMode.addEventListener("click", () => {
   timeline
     .add({
       targets: ".sun",
-      d: [{ value: moonPath }, { value: moonPath }],
+      d: [{ value: toggle ? sunPath : moonPath }],
     })
     .add(
       {
@@ -25,5 +25,26 @@ darkMode.addEventListener("click", () => {
         rotate: 320,
       },
       "-=750"
+    )
+    .add(
+      {
+        targets: ".nav,.hero-area",
+        backgroundColor: toggle ? "rgb(255,255,255)" : "rgb(22,22,22)",
+      },
+      "-=750"
+    )
+    .add(
+      {
+        targets: "h1,p,a",
+        color: toggle ? "rgb(0,0,0)" : " rgb(255,255,255)",
+      },
+      "-=750"
     );
+
+  // Every time we click on sun, i want toggle to switch
+  if (!toggle) {
+    toggle = true;
+  } else {
+    toggle = false;
+  }
 });

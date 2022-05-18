@@ -26,7 +26,7 @@ a {
   width: 1152px;
   max-width: 90%;
   margin: 0 auto;
-  height: 100%;
+  
 }
 .navbar {
   display: flex;
@@ -61,8 +61,12 @@ a {
 /* navbar end  */
 
 /* main start  */
+.hero-area{
+  padding: 1px;
+}
 .hero {
   margin-top: 30px;
+  
   display: flex;
   justify-content: space-between;
 }
@@ -82,7 +86,7 @@ p {
   line-height: 1.2;
 }
 .hero .left p {
-  margin-top: 10px;
+  
   letter-spacing: 1px;
   font-size: 20px;
 }
@@ -112,10 +116,11 @@ p {
 /* content area start  */
 
 .content{
+  
     background: var(--dark);
     padding-top: 20px;
     padding-bottom: 20px;
-    margin: 20px 0;
+    
 }
 .title-bar{
     margin-top: 20px;
