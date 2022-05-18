@@ -231,6 +231,10 @@ p {
   .social-icons a i {
     margin: 0 10px;
   }
+  .darkMode{
+    height: 20px;
+    width: 20px;
+  }
 }
 
 @media (max-width: 460px) {
@@ -239,7 +243,7 @@ p {
     font-weight: bold;
   }
   .navbar .menu .nav-list li {
-    margin-right: 10px;
+    margin-right: 5px;
     font-size: 14px;
   }
   .navbar .menu .nav-list li a {
@@ -294,8 +298,8 @@ p {
     transition: all 0.3s ease-in-out;
   }
   .navbar .menu .nav-list li {
-    margin-right: 10px;
-    font-size: 14px;
+    margin-right: 5px;
+    font-size: 12px;
     letter-spacing: 1px;
   }
   .navbar .menu .nav-list li a {
