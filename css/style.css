@@ -21,6 +21,15 @@ a {
   text-decoration: none;
   color: var(--dark);
 }
+p,h1{
+  transition: all 0.3s ease-in-out;
+}
+ h1:hover{
+  transform: scale(1.1);
+}
+p:hover{
+  letter-spacing: 1.3px;
+}
 
 .container {
   width: 1152px;
@@ -37,6 +46,10 @@ a {
 .navbar .brand {
   font-size: 56px;
   letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+}
+.navbar .brand:hover{
+  transform: scale(1.1);
 }
 
 .navbar .menu .nav-list {
@@ -52,17 +65,23 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-.navbar .menu .nav-list li a:hover {
+.navbar .menu .nav-list li:hover,.navbar .menu .nav-list li a:hover {
   color: var(--primary);
-  transition: all 0.3s ease-in-out;
-  font-size: 25px;
+  transform: scale(1.2);
   font-weight: bold;
+}
+
+#darkMode{
+  transition: all 0.3s ease-in-out;
+}
+#darkMode:hover{
+  transform: scale(1.2);
 }
 /* navbar end  */
 
 /* main start  */
 .hero-area{
-  padding: 1px;
+  padding: 20px 0;
 }
 .hero {
   margin-top: 30px;
@@ -79,15 +98,21 @@ a {
 .hero .left .ankit {
   color: var(--primary);
 }
+
 .hero .left h1{
   font-size: 4rem;
+  transition: all 0.3s ease-in-out;
 }
+
 .hero .left p {
   color: var(--dark);
   letter-spacing: 1px;
   font-size: 1.6rem;
+  transition: all 0.3s ease-in-out;
 }
-
+.hero .left h1:hover,.hero .left p:hover{
+  transform: scale(1.1);
+}
 .hero .left h1,
 p {
   text-align: center;
@@ -110,11 +135,36 @@ p {
 .social-icons a i {
   margin: 0 20px;
 }
+.social-icons a i:hover{
+  transform: scale(1.2);
+}
+
+.resume{
+  text-align: center;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  font-size: 1.8rem;
+  border: 1px solid var(--dark);
+  padding: 10px;
+  transition: all .2s ease-in-out;
+}
+.resume:hover{
+  transform: scale(1.1);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+.resume a:hover{
+  color: var(--primary);
+}
 
 .hero .right img {
   height: 600px;
   width: 520px;
   border-radius: 50px;
+  transition: all .2s ease-in-out;
+}
+.hero .right img:hover{
+  transform: scale(1.03);
 }
 /* hero section end  */
 
@@ -123,7 +173,7 @@ p {
 .content{
     background: var(--dark);
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     
 }
 .content .container h1{
@@ -149,14 +199,12 @@ p {
 
 .content-area .post-card {
     width: 100%;
-    
     margin-left: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
     border-radius: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .content-area .post-card{
   display: flex;
@@ -168,6 +216,13 @@ p {
   width: 350px;
   height: 250px;
  
+}
+.content-area .post-card a{
+  transition: all .3s ease-in-out;
+
+}
+.content-area .post-card a:hover{
+  transform: scale(1.1);
 }
 
 /* .content-area .post-card .right {
@@ -221,6 +276,11 @@ p {
     padding-top: 10px;
     letter-spacing: 1.5px;
     font-size: 20px;
+    transition: all .3s ease-in-out;
+}
+.footer p:hover{
+  transform: scale(1.1);
+  letter-spacing: 3px;
 }
 /* .footer .footer-icons{
     border: none;
