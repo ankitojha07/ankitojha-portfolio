@@ -123,10 +123,14 @@ p {
     justify-content: space-between;
     align-items: center;
 }
-.title-bar h1{
+.content .container h1{
+  color: var(--pure);
+}
+ h1{
     font-size: 2rem;
     letter-spacing: 1px;
-    color: var(--pure);
+    text-align: center;
+    
 }
 .content-area {
     margin-top: 10px;
