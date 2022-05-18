@@ -28,14 +28,14 @@ darkMode.addEventListener("click", () => {
     )
     .add(
       {
-        targets: ".nav,.hero-area",
+        targets: ".nav,.hero-area,.about,.post-card",
         backgroundColor: toggle ? "rgb(255,255,255)" : "rgb(22,22,22)",
       },
       "-=750"
     )
     .add(
       {
-        targets: "h1,p,a",
+        targets: "h1,h3,p,a,.btn, .about",
         color: toggle ? "rgb(0,0,0)" : " rgb(255,255,255)",
       },
       "-=750"
