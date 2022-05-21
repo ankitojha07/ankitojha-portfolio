@@ -28,7 +28,7 @@ darkMode.addEventListener("click", () => {
     )
     .add(
       {
-        targets: ".nav,.hero-area,.about,.post-card",
+        targets: ".nav,.hero-area,.about",
         backgroundColor: toggle ? "rgb(255,255,255)" : "rgb(22,22,22)",
       },
       "-=750"
@@ -37,6 +37,13 @@ darkMode.addEventListener("click", () => {
       {
         targets: "h1,h3,p,a,.btn, .about",
         color: toggle ? "rgb(0,0,0)" : " rgb(255,255,255)",
+      },
+      "-=750"
+    )
+    .add(
+      {
+        targets: ".my-port,.projects-p",
+        color: !toggle ? "rgb(255,255,255)" : " rgb(255,255,255)",
       },
       "-=750"
     );

@@ -261,6 +261,16 @@ p {
   font-size: 18px;
 }
 
+.tech-list{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.tech-list p{
+  font-weight: bolder;
+}
+
 
 /* footer start  */
 .footer{
