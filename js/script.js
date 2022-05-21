@@ -42,7 +42,7 @@ darkMode.addEventListener("click", () => {
     )
     .add(
       {
-        targets: ".my-port,.projects-p",
+        targets: ".my-port,.projects-p,.footer-p",
         color: !toggle ? "rgb(255,255,255)" : " rgb(255,255,255)",
       },
       "-=750"
