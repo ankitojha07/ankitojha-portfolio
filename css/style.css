@@ -250,7 +250,7 @@ p {
 
 /* about me section */
 .about{
-  padding: 20px;
+  padding: 30px;
 }
 .about .container h1{
   text-align: center;
@@ -268,7 +268,7 @@ p {
   align-items: center;
 }
 .tech-list p{
-  font-weight: bolder;
+  font-weight: 400;
 }
 
 
@@ -285,7 +285,7 @@ p {
 }
 .footer p{
     padding-top: 10px;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     font-size: 20px;
     transition: all .3s ease-in-out;
 }
