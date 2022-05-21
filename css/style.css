@@ -225,28 +225,7 @@ p {
   transform: scale(1.1);
 }
 
-/* .content-area .post-card .right {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: flex-start;
-  margin-left: 20px;
-} */
-/* .content-area .post-card .right h3,.content-area .post-card .right p{
-    text-align: start;
-    letter-spacing: 1px;
-    margin-top: 10px;
-} */
-/* .content-area .post-card .right .btn{
-    margin-top: 10px;
-    border: 1px solid var(--dark);
-    border-radius: 10px;
-    padding: 8px 10px;
-    background: transparent;
-    font-size: .7rem;
-    color: var(--dark);
-    letter-spacing: 1px;
-} */
+
 
 /* about me section */
 .about{
@@ -293,11 +272,7 @@ p {
   transform: scale(1.1);
   letter-spacing: 3px;
 }
-/* .footer .footer-icons{
-    border: none;
-    margin: 0;
-    
-} */
+
 
 /* responsive  */
 @media (max-width: 950px) {

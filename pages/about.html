@@ -12,7 +12,7 @@
     <title>Ankit Ojha | About Me</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/about.css" />
-
+    <link rel="stylesheet" href="../css/contact.css" />
     <!-- font awesome  -->
     <link
       rel="stylesheet"
@@ -37,7 +37,7 @@
           <ul class="nav-list">
             <li><a href="../index.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./daily-updates.html">Daily Updates</a></li>
           </ul>
         </div>
         <svg
@@ -123,6 +123,41 @@
         </div>
       </section>
     </section>
+    <section class="container">
+      <div class="contact">
+        <div class="wrapper">
+          <h2>Contact Me</h2>
+          <div class="error_msg" id="error_msg"></div>
+          <form
+            action="mailto:ankitojha1409@gmai.com"
+            method="post"
+            onsubmit="return validation()"
+            id="myForm"
+          >
+            <div class="input_field">
+              <input type="text" placeholder="Name" id="name" />
+            </div>
+            <div class="input_field">
+              <input type="email" placeholder="Email" id="email" />
+            </div>
+            <div class="input_field">
+              <input type="text" placeholder="Phone" id="phone" />
+            </div>
+            <div class="input_field">
+              <textarea id="message" placeholder="Message..."></textarea>
+            </div>
+            <div class="input_field" id="RefreshPage">
+              <input type="submit" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script>
+      $("#RefreshPage").click(function () {
+        location.reload();
+      });
+    </script>
     <script src="../js/anime.min.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/about.js"></script>
