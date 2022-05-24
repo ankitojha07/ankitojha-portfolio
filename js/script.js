@@ -1,13 +1,13 @@
-var i = 0;
-var text = "Front-end Developer / Figma Expert";
-function typing() {
-  if (i < text.length) {
-    document.getElementById("type").innerHTML += text.charAt(i);
-    i++;
-    setTimeout(typing, 50);
-  }
-}
-typing();
+// var i = 0;
+// var text = "Front-end Developer / Figma Expert";
+// function typing() {
+//   if (i < text.length) {
+//     document.getElementById("type").innerHTML += text.charAt(i);
+//     i++;
+//     setTimeout(typing, 50);
+//   }
+// }
+// typing();
 
 const moonPath =
   "M14.5 27.5C14.5 42.6878 27.5 53 27.5 55C12.3122 55 0 42.6878 0 27.5C0 12.3122 12.3122 0 27.5 0C27.5 0 14.5 12.3122 14.5 27.5Z";
