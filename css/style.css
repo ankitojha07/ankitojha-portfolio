@@ -276,6 +276,17 @@ p {
   letter-spacing: 3px;
 }
 
+/* chat  */
+.chat-icon{
+  position: fixed;
+  right: 30px;
+  bottom: 0;
+  font-size: 80px;
+  color: #000000;
+  cursor: pointer;
+  z-index: 1000;
+}
+
 
 /* responsive  */
 @media (max-width: 950px) {
