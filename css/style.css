@@ -282,9 +282,25 @@ p {
   right: 30px;
   bottom: 0;
   font-size: 80px;
-  color: #000000;
+  color: #fff;
   cursor: pointer;
   z-index: 1000;
+}
+
+.chat-box{
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  width: 400px;
+  height: 75vh;
+  background-color: #dedede;
+  z-index: 1000;
+  transition: all 0.3 ease-out;
+  transform: scale(0);
+}
+
+.chat-box.active{
+  transform: scale(1);
 }
 
 
