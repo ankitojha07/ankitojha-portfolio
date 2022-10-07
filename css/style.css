@@ -7,7 +7,7 @@
   font-family: "Zen Loop", cursive;
 }
 :root {
-  --primary: tomato;
+  --primary: rgb(27, 11, 11);
   --dark: #000000;
   --pure: #fff;
   --dark-grey: #c2c2c2;
