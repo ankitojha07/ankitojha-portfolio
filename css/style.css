@@ -410,7 +410,7 @@ p {
   height: 100%;
   width: 100%;
   position: absolute;
-  top: 85%;
+  top: 80%;
   left: 0;
   background: rgba(255, 255, 255, 0.9);
   display: flex;
@@ -421,7 +421,7 @@ p {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 4.5rem;
+  height: 3rem;
   width: 100%;
   padding-left: 1rem;
   background: #ffd900;
@@ -445,7 +445,7 @@ p {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .work .desc .btns .btn {
   line-height: 0;
@@ -996,26 +996,6 @@ form .button-area {
     }
 }
 @media (max-width: 360px) {
-  .navbar .brand {
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    transition: all 0.3s ease-in-out;
-  }
-  .navbar .menu .nav-list li {
-    margin-right: 5px;
-    font-size: 12px;
-    letter-spacing: 1px;
-  }
-  .navbar .menu .nav-list li a {
-    transition: all 0.3s ease-in-out;
-  }
-  .navbar .menu .nav-list li a:hover {
-    color: var(--primary);
-    transition: all 0.3s ease-in-out;
-    font-size: 15px;
-    font-weight: bold;
-  }
 
   .hero {
     margin-top: 30px;
