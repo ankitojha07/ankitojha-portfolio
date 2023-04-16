@@ -84,6 +84,7 @@ p:hover{
 
 /* main start  */
 .hero-area{
+  height: 100vh;
   padding: 20px 0;
 }
 .hero {
@@ -161,8 +162,8 @@ p {
 }
 
 .hero .right img {
-  height: 800px;
-  width: 520px;
+  height: 500px;
+  width: 350px;
   border-radius: 50px;
   transition: all .2s ease-in-out;
 }
