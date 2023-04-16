@@ -373,6 +373,14 @@ p {
     width: 100%;
   }
 }
+@media screen and (max-width: 940px) {
+  .skills .container-skill .row {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1rem;
+    padding: 2rem 0.2rem 2rem 0.2rem;
+    gap: 1rem;
+  }
+}
 /* skills media queries ends*/
 /* skills section ends */
 
