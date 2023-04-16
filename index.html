@@ -13,6 +13,11 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+
     <!-- fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,35 +40,24 @@
   <body>
     
     <!-- nav bar start -->
-    <nav class="nav">
-      <div class="navbar container">
-        <div class="brand"><a href=""> < Ankit Ojha /></Ankit></a></div>
-        <div class="menu">
-          <ul class="nav-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="./pages/about.html">About</a></li>
-            <li><a href="./pages/daily-updates.html">Daily updates</a></li>
-          </ul>
-        </div>
-        <svg
-          id="darkMode"
-          width="30"
-          height="30"
-          viewBox="0 0 55 55"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            class="sun"
-            d="M55 27.5C55 42.6878 42.6878 55 27.5 55C12.3122 55 0 42.6878 0 27.5C0 12.3122 12.3122 0 27.5 0C42.6878 0 55 12.3122 55 27.5Z"
-            fill="#FFEE53"
-          />
-        </svg>
-      </div>
-    </nav>
-    <!-- nav bar end -->
+    <!-- navbar starts -->
+<header>
+  <a href="/" class="logo"><i class=""></i> Ankit Ojha</a>
 
-    
+  <div id="menu" class="fas fa-bars"></div>
+  <nav class="navbar">
+      <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+      </ul>
+  </nav>
+</header>
+<!-- navbar ends -->
     <!-- main section start  -->
     <section class="hero-area" id="home">
       <div id="particles-js"></div>
@@ -112,7 +106,28 @@
       </main>
     </section>
 
-    <section class="content">
+    <!-- skills section starts -->
+<section class="skills" id="skills">
+
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+
+  <div class="container">
+        <div class="row" id="skillsContainer">
+
+          <div class="bar">
+            <div class="info">
+              <img src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
+              <span>AdobeXD</span>
+            </div>
+          </div>
+
+    </div>
+</div>
+</section>
+<!-- skills section ends -->
+
+    <!-- projects section  -->
+    <section class="content" id="projects">
       <div class="container">
         <h1 class="my-port">My Portfolio</h1>
         <p class="projects-p">Here are some of my amazing projects</p>
@@ -139,8 +154,11 @@
         </div>
       </div>
     </section>
-    <section class="about">
-      <div class="container">
+    <!-- project section ends  -->
+
+    <!-- about section  -->
+    <section class="about" id="about">
+      <div class="container" id="about-box">
         <h1>Wanna know more about me?</h1>
         <p>
           Experienced Frontend Engineer with a demonstrated history of working
@@ -160,7 +178,7 @@
             Lovely Professional University, Punjab.</span
           >
         </p>
-        <p
+        <p id="skills"
           style="
             font-weight: bold;
             font-size: 2rem;
@@ -204,6 +222,43 @@
         </div>
       </div>
     </section>
+
+    <!-- about section ends  -->
+    <!-- education section starts -->
+<section class="education" id="education">
+
+  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+
+    <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+
+    <div class="box-container">
+
+    <div class="box">
+        <div class="image">
+        <img draggable="false" src="./public/images/detail-images/lpu.webp" alt="">
+        </div>
+        <div class="content">
+        <h3>Bachelor of Technology in Information Technology</h3>
+        <p>Lovely Professional University | LPU</p>
+        <h4>2021-2024 | Pursuing</h4>
+        </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+      <img draggable="false" src="./public/images/detail-images/lpu.jpg" alt="">
+      </div>
+      <div class="content">
+      <h3>HSC Science | Informatic Practices</h3>
+      <p>Lovely Professional University | LPU</p>
+      <h4>2019-2021 | Completed</h4>
+      </div>
+    </div>
+
+</div>
+</section>
+<!-- education section ends -->
+
     <footer>
       <div class="footer">
         <p class="footer-p">Made with ❤ by Ankit Ojha.</p>
