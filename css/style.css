@@ -326,7 +326,7 @@ p {
 .skills .heading span {
   color: rgb(255, 230, 0);
 }
-.skills .container {
+.skills .container-skill {
   background: white;
   color: #fff;
   border-radius: 1rem;
@@ -335,13 +335,13 @@ p {
   margin: auto;
   margin-top: 2rem;
 }
-.skills .container .row {
+.skills .container-skill .row {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   flex-wrap: wrap;
   gap: 1.8rem;
 }
-.skills .container .bar {
+.skills .container-skill .bar {
   margin-bottom: 15px;
   padding: 10px;
   border-radius: 1rem;
@@ -349,21 +349,21 @@ p {
   background: rgba(0, 0, 22, 0.9);
   transition: 0.2s;
 }
-.skills .container .bar:hover {
+.skills .container-skill .bar:hover {
   box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
   background-color: rgba(0, 0, 0, 0.9) !important;
 }
-.skills .container .bar .info {
+.skills .container-skill .bar .info {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   margin-top: 1rem;
 }
-.skills .container .bar .info i {
+.skills .container-skill .bar .info i {
   font-size: 4rem;
 }
-.skills .container .bar .info span {
+.skills .container-skill .bar .info span {
   font-size: 2rem;
   font-weight: 500;
   font-family: "Poppins";
@@ -371,17 +371,17 @@ p {
 }
 /* skills media queries starts*/
 @media screen and (max-width: 600px) {
-  .skills .container {
+  .skills .container-skill {
     padding: 0;
     margin: 0;
   }
-  .skills .container .row {
+  .skills .container-skill .row {
     grid-template-columns: repeat(2, 1fr);
     margin: 1rem;
     padding: 2rem 0.2rem 2rem 0.2rem;
     gap: 1rem;
   }
-  .skills .container {
+  .skills .container-skill {
     margin-top: 5px;
     width: 100%;
   }
@@ -1059,5 +1059,9 @@ form .button-area {
     height: 330px;
     width: 90%;
     border-radius: 50px;
+  }
+
+  #about-box{
+    margin-top: 120px;
   }
 }
