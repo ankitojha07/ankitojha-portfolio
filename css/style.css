@@ -21,16 +21,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-html::-webkit-scrollbar {
-  width: 0.8rem;
-}
-html::-webkit-scrollbar-track {
-  background: rgb(235, 202, 245);
-}
-html::-webkit-scrollbar-thumb {
-  background: #420177;
-}
-
 :root {
   --primary: #010124;
   --headingPrimary: #ff7b00;
@@ -57,7 +47,6 @@ p:hover{
   letter-spacing: 1.3px;
 }
 .type{
-  margin-top: 10px;
   color: #000000;
 }
 .container {
@@ -91,9 +80,9 @@ section {
   font-weight: 800;
   text-align: center;
 }
-.heading span {
+/* .heading span {
   color: rgb(115, 3, 167);
-}
+} */
 header .logo {
   font-size: 1.9rem;
   font-weight: 800;
@@ -203,7 +192,6 @@ header .navbar ul li a:hover {
   width: 100%;
 }
 .hero-area::before {
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -252,20 +240,19 @@ p {
 }
 
 .social-icons {
-  margin-top: 20px;
+  margin-top: 10px;
   border: 1px solid var(--primary);
-  padding: 10px;
+  padding: 7px;
   border-radius: 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  width: 50%;
+  justify-content: space-evenly;
 }
 .social-icons a {
   color: var(--dark);
 }
-.social-icons a i {
-  margin: 0 20px;
-}
+
 .social-icons a i:hover{
   transform: scale(1.2);
 }
