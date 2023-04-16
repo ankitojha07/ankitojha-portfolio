@@ -246,7 +246,7 @@ p {
   border-radius: 50px;
   display: flex;
   flex-wrap: wrap;
-  width: 50%;
+  width: 100%;
   justify-content: space-evenly;
 }
 .social-icons a {
