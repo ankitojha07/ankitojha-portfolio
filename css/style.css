@@ -1,13 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: 'Patrick Hand', cursive; */
-  /* /* font-family: 'Roboto', sans-serif; */
-  font-family: "Zen Loop", cursive;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
 }
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  background: #f7f7f7;
+  font-family: "Poppins", sans-serif;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+  background: rgb(235, 202, 245);
+}
+html::-webkit-scrollbar-thumb {
+  background: #420177;
+}
+
 :root {
   --primary: rgb(27, 11, 11);
+  --headingPrimary: #ff7b00;
   --dark: #000000;
   --pure: #fff;
   --dark-grey: #c2c2c2;
@@ -40,11 +67,17 @@ p:hover{
   margin: 0 auto;
   
 }
+
+/* nav starts here  */
+
+.nav{
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+}
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px 0;
 }
 .navbar .brand {
   font-size: 56px;
@@ -83,6 +116,23 @@ p:hover{
 /* navbar end  */
 
 /* main start  */
+
+.hero-area #particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.hero-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
 .hero-area{
   height: 100vh;
   padding: 20px 0;
