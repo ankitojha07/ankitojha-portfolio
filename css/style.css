@@ -32,7 +32,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 :root {
-  --primary: rgb(27, 11, 11);
+  --primary: #010124;
   --headingPrimary: #ff7b00;
   --dark: #000000;
   --pure: #fff;
@@ -319,7 +319,7 @@ p {
 .skills {
   padding: 20px;
   min-height: 90vh;
-  background: rgb(15, 15, 155);
+  background: #010124;
 }
 .skills h2 {
   color: #fff;
@@ -392,8 +392,7 @@ p {
 
 /* work section starts */
 .work {
-  /* background: #010124; */
-  background: linear-gradient(to bottom, #000031, #00002c);
+  background: #010124;
 }
 .work h2 {
   color: #fff;
@@ -602,8 +601,11 @@ p {
 
 /* education section starts */
 .education {
-  background: #e5ecfb;
+  background: #ffffff;
   min-height: 80vh;
+}
+.education > h1> span{
+  color: #011aff;
 }
 .education .qoute {
   font-size: 1.5rem;
@@ -709,32 +711,14 @@ p {
 /* education section ends */
 
 
-/* footer start  */
-.footer{
-  background: var(--dark);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    color: var(--pure);
-    padding: 20px;
-}
-.footer p{
-    padding-top: 10px;
-    letter-spacing: 2px;
-    font-size: 20px;
-    transition: all .3s ease-in-out;
-}
-.footer p:hover{
-  transform: scale(1.1);
-  letter-spacing: 3px;
-}
 
 /* contact section starts */
 .contact {
   background: var(--dark-grey);
   min-height: 60vh;
+}
+.contact > h2 > span{
+  color: #011aff;
 }
 .contact .container {
   max-width: 1050px;
@@ -803,11 +787,11 @@ form .message textarea {
 .field input:focus,
 .message textarea:focus {
   padding-left: 47px;
-  border: 2px solid rgb(115, 3, 167);
+  border: 2px solid var(--primary);
 }
 .field input:focus ~ i,
 .message textarea:focus ~ i {
-  color: rgb(115, 3, 167);
+  color: var(--primary);
 }
 form .message {
   position: relative;
@@ -842,13 +826,13 @@ form .button-area {
   cursor: pointer;
   border-radius: 5px;
   padding: 13px 25px;
-  background: #2506ad;
-  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  background: #010124;
+  box-shadow: 0px 5px 10px var(--primary);
   transition: 0.3s ease;
   font-family: "Nunito", sans-serif;
 }
 .button-area button:hover {
-  background: #421cecf5;
+  background: #010146;
 }
 .button-area span {
   font-size: 17px;
@@ -887,6 +871,29 @@ form .button-area {
 }
 /* contact section media queries ends */
 /* contact section ends */
+
+/* footer start  */
+.footer{
+  background: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    color: var(--pure);
+    padding: 20px;
+}
+.footer p{
+    padding-top: 10px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+}
+.footer p:hover{
+  transform: scale(1.1);
+  letter-spacing: 3px;
+}
+
 
 /* responsive  */
 @media (max-width: 950px) {
