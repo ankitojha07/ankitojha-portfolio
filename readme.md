@@ -1,6 +1,5 @@
 # Ankit Ojha : Portfolio website
-### Live website : 
-https://ankitojha.netlify.app/
+### Live website : [Ankit Ojha Portfolio](https://ankitojha07.github.io/ankitojha-portfolio)
 
 ## Screenshot of the website
 ### Lite Mode :
