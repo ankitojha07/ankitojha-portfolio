@@ -246,7 +246,7 @@ p {
   border-radius: 50px;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 50%;
   justify-content: space-evenly;
 }
 .social-icons a {
@@ -303,14 +303,17 @@ p {
 
 /* skills section starts */
 .skills {
-  min-height: 90vh;
   background: #010124;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .skills h2 {
   color: #fff;
 }
 .skills .heading span {
-  color: rgb(255, 230, 0);
+  color: rgb(16, 127, 223);
 }
 .skills .container-skill {
   background: white;
@@ -318,7 +321,6 @@ p {
   border-radius: 1rem;
   padding: 2rem ;
   width: 100%;
-  margin: auto;
   margin-top: 2rem;
 }
 .skills .container-skill .row {
@@ -392,7 +394,7 @@ p {
   padding: 1rem;
 }
 .work .heading span {
-  color: rgb(255, 230, 0);
+  color: rgb(16, 127, 223);
 }
 .work .box-container {
   display: flex;
@@ -567,6 +569,9 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+#about-box p{
+  text-align: start;
 }
 .more-me{
   height: 100vh;
