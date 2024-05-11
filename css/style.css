@@ -183,6 +183,7 @@ header .navbar ul li a:hover {
   gap: 1.5rem;
   min-height: 100vh;
   align-items: center;
+  margin-top: 30px;
 }
 .hero-area #particles-js {
   position: absolute;
@@ -866,6 +867,15 @@ form .button-area {
     width: 100%;
     margin-right: 2rem;
   }
+  .social-icons{
+    width: 100%;
+  }
+  .hero{
+    display: flex;
+    height: 100v;
+    justify-content: center;
+    align-items: center;
+  }
 }
 /* contact section media queries ends */
 /* contact section ends */
@@ -957,6 +967,9 @@ form .button-area {
     width: 100%;
     margin-top: 10px;
   }
+  .more-me{
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 560px) {
@@ -982,11 +995,13 @@ form .button-area {
     align-items: center;
   }
   .hero .right img {
-
     margin-top: 20px;
-    height: 450px;
+    height: 350px;
     width: 90%;
     border-radius: 50px;
+  }
+  .more-me{
+    margin-top: 50px;
   }
 
   /* content  */
