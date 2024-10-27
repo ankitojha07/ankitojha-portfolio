@@ -904,7 +904,7 @@ form .button-area {
 
 
 /* responsive  */
-@media (max-width: 950px) {
+/* @media (max-width: 950px) {
   .navbar .brand {
     font-size: 20px;
     font-weight: bold;
@@ -970,12 +970,32 @@ form .button-area {
   .more-me{
     margin-top: 50px;
   }
-}
+} */
 
-@media (max-width: 560px) {
+@media (max-width: 950px) {
+
+  .work{
+    margin-top: 400px;
+  }
+
+  .hero-area .container{
+    padding: 0;
+  }
+
+  .skills{
+    margin-top: 250px;
+  }
+
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   /* hero section  */
   .hero{
     display: block;
+    max-width: 70%;
   }
   .hero > .left > h1 {
    font-size: 2rem;
@@ -997,11 +1017,11 @@ form .button-area {
   .hero .right img {
     margin-top: 20px;
     height: 350px;
-    width: 90%;
+    width: 300px;
     border-radius: 50px;
   }
   .more-me{
-    margin-top: 50px;
+    margin-top: 250px;
   }
 
   /* content  */
@@ -1023,6 +1043,10 @@ form .button-area {
     }
 }
 @media (max-width: 360px) {
+
+  .hero-area .container{
+    padding: 0px;
+  }
 
   .hero {
     margin-top: 30px;
